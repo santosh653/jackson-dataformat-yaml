@@ -3,9 +3,11 @@ arch:
   - ppc64le
 language: java
 
+#Adding oraclejdk11 for amd64 as oraclejdk7/8 are not supported on amd64. Also adding openjdk11 for both amd64 & ppc64le. 
 jdk:
-  - oraclejdk7
-  - oraclejdk8
+  - oraclejdk11
+  - openjdk11
+  
 
 # whitelist
 branches:
